@@ -5,10 +5,24 @@ function AddToCard(props) {
   const handleIncrease = () => {
     setCount(count + 1);
   };
+  const handleDecrease = () => {
+    setCount(count - 1);
+  };
+
   return (
-    <button onClick={handleIncrease} className="addToCart">
-      <>Add To Cart</>
-    </button>
+    <>
+      {count <= 0 ? (
+        <button onClick={handleIncrease} className="addToCart">
+          <>Add To Cart</>
+        </button>
+      ) : (
+        <button className="addToCartMore">
+          <div onClick={handleDecrease}>-</div>
+          <div>{count}</div>
+          <div onClick={handleIncrease}>+</div>
+        </button>
+      )}
+    </>
   );
 }
 
