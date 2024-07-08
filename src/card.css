@@ -1,0 +1,23 @@
+.container {
+  background: rgb(198, 65, 65);
+  border-radius: 10px;
+  margin: auto;
+  width: 300px;
+  padding: 10px;
+  margin-top: 20px;
+}
+.addToCart,
+.addToCartMore {
+  display: block;
+  margin-top: 22px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.addToCartMore {
+  display: flex;
+}
+
+
+
